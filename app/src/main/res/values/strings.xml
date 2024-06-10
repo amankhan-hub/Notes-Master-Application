@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">QuickNote</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="add_note">Add Note</string>
+    <string name="adding_note">Adding Note</string>
+    <string name="update_note">Update Note</string>
+    <string name="add_a_new_note">Add a new note</string>
+    <string name="added_notes">Added Notes</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="note_title">Note Title:</string>
+    <string name="note_description">Note Description:</string>
+    <string name="timestampupdate">timestamp</string>
+</resources>

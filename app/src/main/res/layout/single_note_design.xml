@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="5dp"
+    app:cardElevation="10dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/addednote" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/note_title"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/notename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/note_description"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/notedescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple"
+                android:maxLines="3" /> <!-- Limiting to 3 lines -->
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/timestamp"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:textColor="@color/purple"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/updateimg"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/update" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

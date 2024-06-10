@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/purple"
+    app:contentPadding="5dp"
+    app:cardElevation="10dp"
+    android:layout_margin="3dp"
+    android:layout_gravity="center"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedcorner"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Note"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/brooklynsky"
+            android:textSize="30sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFDDAAE6"
+            android:layout_margin="10dp"
+            android:id="@+id/updatetitlename"
+            android:paddingLeft="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDAAE6"
+            android:layout_margin="10dp"
+            android:id="@+id/updatetitledescription"
+            android:paddingLeft="8dp"
+            android:lines="5"
+            android:gravity="top"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/timestampupdate"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tvtimeStampupdate"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/update_note"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/brooklynsky"
+            android:id="@+id/noteupdatebtn"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
